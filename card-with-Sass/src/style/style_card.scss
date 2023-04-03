@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+#root{
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1frfr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr ;
+    background: rgb(24,16,47);
+    background: radial-gradient(circle, rgba(24,16,47,1) 0%, rgb(15, 49, 88) 50%);
+}
+
+.card-background{
+    height: 500px;
+    width: 400px;
+    grid-column : 2/3;
+    grid-row: 2/3;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+    
+
+    .imgBck{
+        display: flex;
+        justify-content: flex-end;
+        background: rgb(2,0,36);
+        background: linear-gradient(243deg, rgba(2,0,36,1) 0%, rgb(62, 62, 109) 80%, rgba(99,99,163,1) 100%);
+        height: 55%;
+        border-radius: 30px 0;
+        
+    }
+        .lama{
+            height: 250px;
+            padding: 10px;
+            margin-left: 10px;
+            z-index: 3;
+        }
+
+        .planet{
+            z-index: 1;
+            margin-top: -60px;
+            margin-left: 300px;
+            height: 110px;
+            opacity: 0.8;
+            
+
+        }
+
+        
+    .texte{
+        background-color: whitesmoke;
+        height: 60%;
+        padding: 20px;
+        border-radius: 0 0 30px 30px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+        h1{
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+}
