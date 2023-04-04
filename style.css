@@ -6,7 +6,8 @@
 
   :root {
     --card-height: 55vh;
-    --card-width: 18vw;
+    --card-width: 28vw;
+    font-size: 16px;
   }
   
   body {
@@ -64,13 +65,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
   }
   .card-background .texte h1 {
-    margin: 1em 0 0.5em 0;
+    font-size: 1em;
     text-align: center;
   }
   .card-background .texte p {
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
   }
   .card-background .texte button {
     padding: 10px;
