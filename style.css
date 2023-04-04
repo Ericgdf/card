@@ -6,7 +6,7 @@
 
   :root {
     --card-height: 55vh;
-    --card-width: 21vw;
+    --card-width: 18vw;
   }
   
   body {
@@ -25,6 +25,14 @@
     height: var(--card-height);
     width: var(--card-width);
     box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .background{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
   .card-background .imgBck {
     display: flex;
@@ -35,27 +43,30 @@
     border-radius: 30px 0;
   }
   .card-background .lama {
-    height: 100%;
+    height: 90%;
     padding: 10px;
-    margin-left: 10px;
+    margin-left: 2em;
     z-index: 3;
   }
   .card-background .planet {
-    z-index: 1;
-    margin-top: -60px;
-    margin-left: 300px;
-    height: 110px;
+    margin-right: -2em;
+    margin-top: -2em;
+    width: 40%;
+    height: 40%;
     opacity: 0.8;
   }
   .card-background .texte {
     background-color: whitesmoke;
     height: 70%;
-    padding: 20px;
+    padding: 1em;
     border-radius: 0 0 30px 30px;
     font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .card-background .texte h1 {
-    margin: 20px 0;
+    margin: 1em 0 0.5em 0;
     text-align: center;
   }
   .card-background .texte p {
@@ -65,11 +76,10 @@
     padding: 10px;
     background-color: #3e3e6d;
     border-radius: 50px;
-    margin-top: 20px;
-    margin-left: 70px;
+    margin-top: 1em;
     color: whitesmoke;
-    width: 200px;
-    font-size: 20px;
+    width: 50%;
+    font-size: 1em;
   }
   .card-background .texte :hover {
     background-color: whitesmoke;
